@@ -1,38 +1,62 @@
+:root {
+    /** Theme 1 **/
+    --dark-blue: #003f5c;
+    --medium-blue: #005c86;
+    --blue: #0079b1;
+    --light-blue: #0096db;
+    --black: #000507;
+    --darkest-blue: #002231;
+}
+
 .App {
-  text-align: center;
+    width: 100%;
+    background-color: var(--darkest-blue);
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: var(--dark-blue);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-button {
+    color: var(--light-blue);
+    border-color: var(--light-blue);
+    background-color: var(--dark-blue);
+}
+
+.App-button:hover {
+    color: var(--blue);
+    background-color: var(--darkest-blue);
+}
+
+.App-footer {
+    background-color: var(--light-blue);
+    color: var(--darkest-blue);
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
